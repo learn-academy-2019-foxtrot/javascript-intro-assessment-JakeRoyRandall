@@ -191,8 +191,6 @@ const onlyCats = (array) => {
   let cats = array.filter((v, i) => {
     if (v.animal === "cat") {
       return v
-    } else {
-      return
     }
   })
   console.log(cats);
@@ -207,8 +205,6 @@ const notCats = (array) => {
     if (v.animal !== "cat") {
       console.log(v.name);
       return v.name
-    } else {
-      return
     }
   })
 }
