@@ -116,10 +116,15 @@ letterLogMap(5);
 // 3c. STRETCH: Write the code that logs each letter of the message using a while loop.
   console.log("***3c***");
   var i = 0
-  do {
+  // do {
+  //   console.log(myMessage[i]);
+  //   i++
+  // } while (i < myMessage.length){
+  // }
+
+  while (i < myMessage.length){
     console.log(myMessage[i]);
     i++
-  } while (i < myMessage.length){
   }
 
 // 3d. SUPER STRETCH: Write the code that logs each letter of the message using forEach().
