@@ -7,17 +7,20 @@ var mantra = "Be the dev"
 // 1a. Write the code that determines if there is a 'B' in mantra.
 mantra.includes("B")
 //Sanity check that the above line's logic works
-// console.log(mantra.includes("B"));
+console.log("***1a***");
+console.log(mantra.includes("B"));
 
 // 1b. Write the code that determines if there is an 'x' in mantra.
 mantra.includes("x")
 //Sanity check that the above line's logic works
-// console.log(mantra.includes("x"));
+console.log("***1b***");
+console.log(mantra.includes("x"));
 
 // 1c. Write the code that determines if there is a 'v' in mantra.
 mantra.includes("v")
 //Sanity check that the above line's logic works
-// console.log(mantra.includes("v"));
+console.log("***1c***");
+console.log(mantra.includes("v"));
 
 // 1d. STRETCH: Write a function that can take two arguments - a string and a letter and returns a sentence telling the user if the letter exists within the string.
 const ifStringBoolean = (string1, string2) => {
@@ -28,9 +31,10 @@ const ifStringBoolean = (string1, string2) => {
   }
 }
 //Sanity Checks for ifStringBoolean()
-// console.log(ifStringBoolean(mantra,"B"));
-// console.log(ifStringBoolean(mantra,"x"));
-// console.log(ifStringBoolean(mantra,"v"));
+console.log("***1d***");
+console.log(ifStringBoolean(mantra,"B"));
+console.log(ifStringBoolean(mantra,"x"));
+console.log(ifStringBoolean(mantra,"v"));
 
 // ------------------------------ Consider the following variables:
 var myDog = "Snoopy"
@@ -50,26 +54,29 @@ const compareStringLength = (string1, string2) => {
 }
 
 // Sanity Checks for compareStringLength()
-// console.log(compareStringLength(myDog, myCat));
-// console.log(compareStringLength(myDog, "short"));
-// console.log(compareStringLength("short", myCat));
-// console.log(compareStringLength(5, myCat));
+console.log("***2a***");
+console.log(compareStringLength(myDog, myCat));
+console.log(compareStringLength(myDog, "short"));
+console.log(compareStringLength("short", myCat));
+console.log(compareStringLength(5, myCat));
 
 // 2b. Create a function that takes in two arguments and returns an array containing the two variables. Expected output: ["Snoopy", "Garfield"]
 const toArray = (arg1, arg2) => {
     return [arg1, arg2]
 }
 //Sanity checks for toArray()
-// console.log(toArray(myDog,myCat));
-// console.log(toArray("items1", [myCat, myDog]));
-// console.log(toArray("jim", 5));
+console.log("***2b***");
+console.log(toArray(myDog,myCat));
+console.log(toArray("items1", [myCat, myDog]));
+console.log(toArray("jim", 5));
 
 // 2c. STRETCH: Write a function that accepts two variables and returns a string in all lowercase letters. Expected output: "snoopy garfield"
 const twoToLower = (arg1, arg2) => {
   return `${arg1.toLowerCase()} ${arg2.toLowerCase()}`
 }
 //Sanity checks for twoToLower()
-// console.log(twoToLower(myDog, myCat));
+console.log("***2c***");
+console.log(twoToLower(myDog, myCat));
 
 // ------------------------------ Consider the following variable:
 var myMessage = "Learning is fun!"
@@ -86,8 +93,9 @@ const letterLog = (string) => {
   return
 }
 //Sanity checks for letterLog()
-// letterLog("jimbo");
-// letterLog(5);
+console.log("***3a***");
+letterLog("jimbo");
+letterLog(5);
 
 // 3b. Write the code that logs each letter of the message using map.
 const letterLogMap = (string) => {
@@ -99,25 +107,28 @@ const letterLogMap = (string) => {
     console.log("Please enter a valid string.");
   }
 }
+
 //Sanity checks for letterLog()
-// letterLogMap("jimbo");
-// letterLogMap(5);
+console.log("***3b***");
+letterLogMap("jimbo");
+letterLogMap(5);
 
 // 3c. STRETCH: Write the code that logs each letter of the message using a while loop.
-// Code commented out for convenience
-  // var i = 0
-  // do {
-  //   console.log(myMessage[i]);
-  //   i++
-  // } while (i < myMessage.length){
-  // }
+  console.log("***3c***");
+  var i = 0
+  do {
+    console.log(myMessage[i]);
+    i++
+  } while (i < myMessage.length){
+  }
 
 // 3d. SUPER STRETCH: Write the code that logs each letter of the message using forEach().
 const letterLogEach = (letter) => {
   console.log(letter);
 }
 // Sanity check for letterLogEach()
-// myMessage.split("").forEach(letterLogEach);
+console.log("***3d***");
+myMessage.split("").forEach(letterLogEach);
 
 // ---------------------------- Consider the following variable:
 var testString = "thisisateststring"
@@ -137,7 +148,8 @@ const noVowels = (arg1) => {
 }
 
 // Sanity check for noVowels()
-// console.log(noVowels(testString));
+console.log("***4a***");
+console.log(noVowels(testString));
 
 
 // 4b. STRETCH: Update your function to return an error message if the variable is not a string. Copy and paste your function to add these changes.
@@ -157,8 +169,9 @@ const noVowelsPlus = (arg1) => {
   }
 }
 // Sanity checks for noVowelsPlus()
-// console.log(noVowelsPlus(testString));
-// console.log(noVowelsPlus(4));
+console.log("***4b***");
+console.log(noVowelsPlus(testString));
+console.log(noVowelsPlus(4));
 
 // ------------------------------- Consider the following variable:
 var toonimals = [ {name: "Itchy",     animal: "mouse"},
@@ -180,7 +193,8 @@ const onlyCats = (array) => {
   console.log(cats);
 }
 // Sanity check for onlyCats()
-// onlyCats(toonimals)
+console.log("***5a***");
+onlyCats(toonimals)
 
 //5b. Write a function that returns only the names of all the non-cats. Expected output: "Itchy" "Daffy" "Ren"
 const notCats = (array) => {
@@ -194,7 +208,8 @@ const notCats = (array) => {
   })
 }
 // Sanity check for notCats()
-// notCats(toonimals)
+console.log("***5b***");
+notCats(toonimals)
 
 //5c. STRETCH: Create a function that will print a sentence for every toon stating their name and their animal type. Use string interpolation. Expected output: "Itchy is a mouse" "Stimpy is a cat" "Daffy is a duck" "Scratchy is a cat" "Ren is a dog" "Felix is a cat"
 
@@ -204,4 +219,5 @@ const aboutToon = (array) => {
 })
 }
 // Sanity check for aboutToons()
-// aboutToon(toonimals)
+console.log("***5c***");
+aboutToon(toonimals)
