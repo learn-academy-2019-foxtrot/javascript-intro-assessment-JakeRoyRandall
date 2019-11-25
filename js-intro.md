@@ -11,6 +11,7 @@ Answer the following questions. First, without external resources. Challenge you
     A function may need to be passed in arguments to work.
     A method is a function.
     There are many methods that can assess or manipulate data that come with vanilla JS.
+    Specific inputs give specific outputs
 
   Researched answer:
 

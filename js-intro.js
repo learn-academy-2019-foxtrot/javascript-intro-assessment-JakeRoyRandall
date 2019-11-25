@@ -24,7 +24,7 @@ console.log(mantra.includes("v"));
 
 // 1d. STRETCH: Write a function that can take two arguments - a string and a letter and returns a sentence telling the user if the letter exists within the string.
 const ifStringBoolean = (string1, string2) => {
-  if (typeof string1.search(string2) === "number") {
+  if (string1.search(string2) !== -1) {
     return `${string2} exists inside of ${string1}`
   } else {
     return `${string2} does not exist inside of ${string1}`
